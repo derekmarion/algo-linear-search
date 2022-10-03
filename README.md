@@ -2,7 +2,7 @@
 
 ## Summary
 
-In computer science, there are many different ways to search through collections of data. Understanding the various algorithms and patterns for searching and sorting data sets is an essential part of computer science.
+In computer science, there are different ways to search through collections of data. Understanding the various algorithms and patterns for searching and sorting data sets is an essential part of computer science.
 
 While modern programming languages such as Python abstract many of the lower-level functions of programming by providing us with function like `index()`(Javascript equivalent method `indexOf()`), it is important to know what is going on underneath the hood. Employers look for people who understand how to put a car together, not someone who knows how to drive. Aside from being important to your knowledge of theory, the searching and sorting algorithms you use will have a significant impact on your program's performance (how long it takes to execute and how much memory it uses). We'll be talking about Big O notation soon.
 
@@ -12,12 +12,8 @@ Linear search (also called *sequential* search) is an algorithm for finding a pa
 
 Source: [Practical Programming](http://pragprog.com/book/gwpy/practical-programming)
 
-#### Note: 
-For the Javascript portion of this challenge, you will need to install this npm package to get the global linear search tests to run correctly: [Shallow-equal](https://www.npmjs.com/package/shallow-equal). To install this package, run the command `npm install` from the same folder as `package.json`.
 
-
-## Releases
-### Release 0 : Basic linear search
+### Step 1 : Basic linear search
 
 Write a function `linear_search` that takes two arguments: the object (i.e., string or number) you are searching for, and the array you're searching in.  
 
@@ -27,9 +23,9 @@ Write a function `linear_search` that takes two arguments: the object (i.e., str
  * If the object searched for does not exist in the array, it should return `None`(Python) or `undefined`(Javascript).
 
 For the Python portion, you can't use any built-in `list` or `Enumerable` methods *except* for `list()`.  You will have to use the keywords `for`, or `while`.
-There are two tests already in the spec file, but you should add more to prove that your code works correctly. Are there any edge cases you need to consider? Did you hit any bugs that should have had tests?
+There are some tests already in the spec file, but you should add more to prove that your code works correctly. Are there any edge cases you need to consider? Did you hit any bugs that should have had tests?
 
-### Release 1 : Global linear search
+### Step 2 : Global linear search
 
 Write a new function `global_linear_search` that returns an array of *all the indices* for the object it searches for.  In other words, if the object `x` is in more than one place in the array, `global_linear_search` will return an array containing the index of each occurrence of `x`.
 
@@ -42,4 +38,4 @@ global_linear_search("a", bananas_list)
 # => [ 1, 3, 5 ]
 ```
 
-There are no tests for `global_linear_search` right now. Maybe the example above is a good starting point?
+We have added a few no tests for `global_linear_search` right now. Add some more to test your code.
