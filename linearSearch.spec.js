@@ -12,6 +12,10 @@ describe("tests linearSearch", () => {
   test("linearSearch(4, [1, 2, 3]) === undefined", () => {
     expect(linearSearch(4, [1, 2, 3])).toBe(undefined);
   });
+
+  test("globalLinearSearch('s', 'bananas'.split('')) === [6]", () => {
+    expect(globalLinearSearch("s", "bananas".split(""))).toEqual([6]);
+  });
 });
 
 describe("tests globalLinearSearch", () => {
