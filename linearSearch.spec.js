@@ -30,4 +30,12 @@ describe("tests globalLinearSearch", () => {
   test("globalLinearSearch('n', 'bananas'.split('')) === [2, 4]", () => {
     expect(globalLinearSearch("n", "bananas".split(""))).toEqual([2, 4]);
   });
+
+  test("globalLinearSearch(4, [1, 2, 3]) === undefined", () => {
+    expect(globalLinearSearch(4, [1, 2, 3])).toBe(undefined);
+  });
+
+  test("globalLinearSearch(3, [1, 2, 3]) === 2", () => {
+    expect(globalLinearSearch(3, [1, 2, 3])).toEqual([2]);
+  });
 });
