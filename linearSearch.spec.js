@@ -13,8 +13,8 @@ describe("tests linearSearch", () => {
     expect(linearSearch(4, [1, 2, 3])).toBe(undefined);
   });
 
-  test("globalLinearSearch('s', 'bananas'.split('')) === [6]", () => {
-    expect(globalLinearSearch("s", "bananas".split(""))).toEqual([6]);
+  test("linearSearch('s', 'bananas'.split('')) === [6]", () => {
+    expect(linearSearch("s", "bananas".split(""))).toEqual(6);
   });
 });
 
