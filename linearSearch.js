@@ -9,8 +9,16 @@ function linearSearch(searchTerm, arr) {
 }
 
 function globalLinearSearch(searchTerm, arr) {
-  //use .match and global regex to build and array of indeces for matches
-  return [];
+  output = [];
+  for (i = 0; i < arr.length; i++) {//iterate through array and compare to search term. use for loop to track index values
+    if (arr[i] === searchTerm) {
+      output.push(i);
+    };
+  };
+  if (output.length === 0) {//return output array of indices, or undefined if search term not found
+    return undefined;
+  };
+  return output;
 }
 
 module.exports = { linearSearch, globalLinearSearch };
